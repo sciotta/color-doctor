@@ -14,6 +14,8 @@
   },
   "author": "Thiago Sciotta <thiagog3@gmail.com> (https://sciotta.com.br/)",
   "license": "ISC",
+  "repository": "git://github.com/thiagog3/front-doctor.git",
+  "homepage": "https://github.com/thiagog3/front-doctor",
   "dependencies": {
     "commander": "^10.0.0",
     "convert-array-to-csv": "^2.0.0",
