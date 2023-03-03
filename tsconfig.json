@@ -3,10 +3,16 @@
     "rootDir": "src",
     "outDir": "dist",
     "strict": false,
-    "target": "es6",
+    "target": "es2022",
     "module": "commonjs",
     "sourceMap": false,
     "esModuleInterop": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
   }
 }

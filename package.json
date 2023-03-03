@@ -1,8 +1,9 @@
 {
   "name": "front-doctor",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "CLI to help improve web front-end projects",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "bin": {
     "front-doctor": "./dist/index.js"
   },
@@ -11,7 +12,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc"
   },
-  "author": "",
+  "author": "Thiago Sciotta <thiagog3@gmail.com> (https://sciotta.com.br/)",
   "license": "ISC",
   "dependencies": {
     "commander": "^10.0.0",
