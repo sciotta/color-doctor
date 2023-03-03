@@ -37,7 +37,7 @@ console.log(figlet.textSync("Front-Doctor"));
 program
   .name('front-doctor')
   .description('CLI to help improve web front-end projects')
-  .version('0.1.0');
+  .version('0.1.1');
 
 program
   .command('find-colors')
