@@ -1,7 +1,7 @@
 {
-  "name": "front-doctor",
-  "version": "0.1.1",
-  "description": "CLI to help improve web front-end projects",
+  "name": "color-doctor",
+  "version": "0.0.1",
+  "description": "CLI to help improve colors of web front-end projects",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
@@ -14,8 +14,8 @@
   },
   "author": "Thiago Sciotta <thiagog3@gmail.com> (https://sciotta.com.br/)",
   "license": "ISC",
-  "repository": "git://github.com/thiagog3/front-doctor.git",
-  "homepage": "https://github.com/thiagog3/front-doctor",
+  "repository": "git://github.com/thiagog3/color-doctor.git",
+  "homepage": "https://github.com/thiagog3/color-doctor",
   "dependencies": {
     "commander": "^10.0.0",
     "convert-array-to-csv": "^2.0.0",

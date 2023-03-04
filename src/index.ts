@@ -35,8 +35,8 @@ const program = new Command();
 console.log(figlet.textSync("Front-Doctor"));
 
 program
-  .name('front-doctor')
-  .description('CLI to help improve web front-end projects')
+  .name('color-doctor')
+  .description('CLI to help improve colors of web front-end projects')
   .version('0.1.1');
 
 program
