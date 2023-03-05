@@ -32,7 +32,7 @@ const findColors = async function(dirs) {
 
 const program = new Command();
 
-console.log(figlet.textSync("Front-Doctor"));
+console.log(figlet.textSync("Color-Doctor"));
 
 program
   .name('color-doctor')

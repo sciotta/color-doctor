@@ -1,11 +1,11 @@
 {
   "name": "color-doctor",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "CLI to help improve colors of web front-end projects",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "front-doctor": "./dist/index.js"
+    "color-doctor": "./dist/index.js"
   },
   "scripts": {
     "start": "node index.js",
