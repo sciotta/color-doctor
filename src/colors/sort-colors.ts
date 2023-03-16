@@ -1,5 +1,5 @@
 const hexSorter = require('hexsorter');
 
-module.exports.sortColors = colors => {
+module.exports.sortByBright = colors => {
   return hexSorter.sortColors(colors, 'mostBrightColor');
 };

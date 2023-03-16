@@ -4,17 +4,20 @@ const { Command } = require('commander');
 const figlet = require("figlet");
 
 const { findAllColors } = require('./colors/find-colors-by-paths');
-const { sortColors } = require('./colors/sort-colors');
+const { sortByBright } = require('./colors/sort-colors');
+const { generateReport } = require('./files/generate-report');
 
 const findColors = async function(dirs) {
   const showIncidences = this.opts().incidences;
+  const saveFormat = this.opts().format;
+
   const colors = await findAllColors(dirs);
   
   const hexColors = [
     ...new Set(Object.keys(colors)
   )];
 
-  const sortedColors = sortColors(hexColors);
+  const sortedColors = sortByBright(hexColors);
   const mappedColors = sortedColors.map((colorHex) => {
     return {
       hex: colorHex,
@@ -22,12 +25,18 @@ const findColors = async function(dirs) {
     }
   });
 
-  if (showIncidences) {2
-    console.dir(mappedColors, {'maxArrayLength': null});
-  } else {
-    console.dir(sortedColors, {'maxArrayLength': null});
+  if (saveFormat === 'csv') {
+    if (showIncidences) {
+      console.dir(mappedColors, {'maxArrayLength': null});
+    } else {
+      console.dir(sortedColors, {'maxArrayLength': null});
+    }
+    console.log('Total colors: ' + hexColors.length);
   }
-  console.log('Total colors: ' + hexColors.length);
+
+  if (saveFormat === 'report') {
+    generateReport(sortedColors)
+  }
 };
 
 const program = new Command();
@@ -44,7 +53,7 @@ program
   .description('Find for color declarations inside some folders')
   .argument('<dirs...>')
   .option('-i, --incidences', 'count incidences', false)
-  .option('-f --format <string>', 'csv or json', 'csv')
+  .option('-f --format <string>', 'csv or report (HTML)', 'csv')
   .action(findColors);
 
 program.parse();
