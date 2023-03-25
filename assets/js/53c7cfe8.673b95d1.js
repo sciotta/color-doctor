@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[7210],{6457:l=>{l.exports=JSON.parse('{"label":"hello","permalink":"/color-doctor/blog/tags/hello","allTagsPath":"/color-doctor/blog/tags","count":2}')}}]);
