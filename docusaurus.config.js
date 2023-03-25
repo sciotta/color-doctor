@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Color Doctor Documentation',
-  tagline: 'Dinosaurs are cool',
+  title: 'Color Doctor',
+  tagline: 'Helping you mapping and simplify your project colors',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -83,26 +83,6 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Docs',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/thiagog3/color-doctor',
-              },
-            ],
-          },
-        ],
         copyright: `Copyright © ${new Date().getFullYear()} Color Doctor, Inc. Built with Docusaurus.`,
       },
       prism: {
